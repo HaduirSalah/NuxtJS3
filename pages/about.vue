@@ -1,17 +1,20 @@
 <template>
-    <div class="about-page">
-        <!-- way 1: using Head tag for local meta tags -->
-        <!-- <Head>
+  <div class="about-page">
+    <!-- way 1: using Head tag for local meta tags -->
+    <!-- <Head>
             <title>About Us - My Nuxt App</title>
             <meta name="description" content="Learn more about us on this page." />
             <meta name="keywords" content="development, Vuejs, Nuxtjs"></meta>
-        </Head>
-        <h1>About Us</h1>
-        <p>This is the about page of our Nuxt.js application.</p> -->
-    </div>
+        </Head>-->
+    <h1>About Us</h1>
+    <p>This is the about page of our Nuxt.js application.</p>
+  </div>
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "about-page",
+});
 // composition API
 // way 2.1: using useHead for local meta tags
 // useHead({
