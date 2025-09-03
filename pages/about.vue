@@ -13,7 +13,7 @@
 
 <script setup>
 definePageMeta({
-  layout: "about-page",
+  layout: "about-page",  // how to add custom layout 
 });
 // composition API
 // way 2.1: using useHead for local meta tags
