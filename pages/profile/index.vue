@@ -9,18 +9,19 @@
 // local middleware
 definePageMeta({
   middleware: [
-    (to, from) => {
-      // Anonymous function (arrow function)
-      console.log("from", from);
-      console.log("to", to);
-      //   if(to.name== 'profile'){
-      //     return navigateTo('/');
-      //   }
+    "auth",
+    // (to, from) => {
+    //   // Anonymous function (arrow function)
+    //   console.log("from", from);
+    //   console.log("to", to);
+    //   //   if(to.name== 'profile'){
+    //   //     return navigateTo('/');
+    //   //   }
 
-      if (!useCookie("user").value) {
-        return navigateTo("/");
-      }
-    },
+    //   if (!useCookie("user").value) {
+    //     return navigateTo("/");
+    //   }
+    // },
   ],
 });
 </script>
