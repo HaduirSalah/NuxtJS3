@@ -9,9 +9,22 @@
     <p>This is the home page of our Nuxt.js application.</p>
   </div>
 </template>
-<script>
+<script setup>
 // import '@/assets/style.css';
-export default {
-  name: "HomePage",
-};
+// composable useCookie
+// how to get cookie
+console.log(useCookie("user").value);
+// how to set cookie
+useCookie("user").value = "Hadeer";
+// how to change value of cookie
+useCookie("user").value = "Ahmed";
+
+// how to set expire date of cookie
+useCookie("user", {
+  // expires: new Date(Date.now() + 1000),
+  // expires: new Date(Date.now() + 1000 * 60 * 60), // after one hour
+  // expires: new Date(Date.now() + 1000 * 60 * 60 * 24), // after one day
+  // maxAge: 3, // after 3 seconds
+  maxAge: 60 * 60 * 24, // after one day
+}).value = "Ahmed";
 </script>
