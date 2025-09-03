@@ -28,6 +28,12 @@
             >Blog
           </NuxtLink>
         </li>
+        <li><NuxtLink :to="{ name: 'products' }">Products</NuxtLink></li>
+        <li>
+          <NuxtLink :to="{ name: 'products-id', params: { id: 1 } }"
+            >Product Details
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </div>
